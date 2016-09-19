@@ -8,13 +8,11 @@ How to use:
 1. Download the vb module and copy it to your App_Code folder.
 2. Make sure all dependencies are available in the BIN folder: AjaxMin.dll & WebMarkupMin.Core.dll
 3. Add the module to the web.config:
-<system.webServer>
-....
-      <modules runAllManagedModulesForAllRequests="false">
-          <!-- Remove this to disable HTML minification-->
-          <add name="WhitespaceModule" type="WhitespaceModule" preCondition="managedHandler" />
-      </modules>
-</system.webServer>
+      <system.webServer>
+            <modules runAllManagedModulesForAllRequests="false">
+                  <add name="WhitespaceModule" type="WhitespaceModule" preCondition="managedHandler" />
+            </modules>
+      </system.webServer>
 
 You are now up and running. Enjoy.
 
